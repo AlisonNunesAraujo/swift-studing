@@ -8,8 +8,9 @@
 import Foundation
 
 struct OrderType: Identifiable {
-      let id: Int
-      let name: String
-      let image: String
-    
+    let id: Int
+    let name: String
+    let image: String
+    let category: String
+    let price: String
 }
