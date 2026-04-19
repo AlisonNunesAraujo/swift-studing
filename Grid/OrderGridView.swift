@@ -12,7 +12,7 @@ struct OrderGridView: View {
                 HStack(spacing: 18) {
                     ForEach(OrderList) { item in
                         NavigationLink {
-                            noty(order: item)
+                            datail(order: item)
                         } label: {
                             VStack(alignment: .leading, spacing: 14) {
                                 ZStack {

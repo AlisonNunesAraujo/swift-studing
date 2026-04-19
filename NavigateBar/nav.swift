@@ -11,9 +11,7 @@ struct Nav: View {
     var body: some View {
         HStack(spacing: 16) {
             VStack(alignment: .leading, spacing: 4) {
-                Text("Showroom")
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
+                
                 
                 Text("Carros em destaque")
                     .font(.title3.weight(.semibold))
@@ -23,7 +21,7 @@ struct Nav: View {
 
             Spacer()
 
-            NavigationLink(destination: noty(order: OrderList[0])) {
+            NavigationLink(destination: notification()) {
                 ZStack {
                     Circle()
                         .fill(.white.opacity(0.18))

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct noty: View {
+struct datail: View {
     let order: OrderType
     
     @Environment(\.presentationMode) var presentationMode
@@ -78,5 +78,5 @@ struct noty: View {
 
 
 #Preview {
-    noty(order: OrderList[0])
+    datail(order: OrderList[0])
 }
